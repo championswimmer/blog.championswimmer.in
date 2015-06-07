@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "championswimmer",
-    "repositoryName": "blog.championswimmer.in",
-    "branch": "gh-pages"
-  },
-  "theme": {
-    "name": "Saga"
-  }
-}
+{"meta":{"username":"championswimmer","repositoryName":"blog.championswimmer.in","branch":"gh-pages","cname":"blog.championswimmer.in"},"site":{"title":"//TODO","description":"code the blog, blog the code","logo":"https://pbs.twimg.com/profile_images/433338030259044353/NBgWx2tQ_400x400.jpeg","cover":"https://pbs.twimg.com/profile_banners/63066473/1392150825/1500x500","postsPerPage":"5","disqus":"championswimmer","url":"http://blog.championswimmer.in"},"socialnetwork":{"email":"championswimmer@gmail.com","twitter":"http://twitter.com/championswimmer","googleplus":"http://plus.google.com/+ArnavGupta","linkedin":"http://linkedin.com/in/arnavgupta","facebook":"http://facebook.com/championswimmer","flickr":"https://flickr.com/championswimmer","github":"http://github.com/championswimmer"},"theme":{"name":"Saga","url":"//championswimmer.github.io/blog.championswimmer.in/themes/Saga"}}

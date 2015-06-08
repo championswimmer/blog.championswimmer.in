@@ -529,6 +529,7 @@ body {
     background-image: url("http://farm9.staticflickr.com/8616/16848271026_9cde509056_k_d.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 #main.archive .post {
     float: left;

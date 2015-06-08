@@ -2,7 +2,7 @@
 
 :hp-tags: delhi, government, politics, bjp, aap
 
-:published-at: 2015-02-10
+:published_at: 2015-02-10
 
 To fellow AAP supporters – congratulations. To fellow BJP supporters- well, Delhi wanted something else this time.
 The reason for this post is, I’ll take a page out of history from my favourite national leader of all time,

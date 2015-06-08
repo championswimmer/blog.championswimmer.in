@@ -297,7 +297,7 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.66) 100%) repeat scroll 0% 0%, url('http://farm6.staticflickr.com/5491/12340692505_70af55e46d_k_d.jpg') no-repeat scroll 0% 0% transparent;
     width: 100%;
     height: 100%
 }
@@ -305,7 +305,8 @@ body {
     width: 600px;
     margin: auto;
     padding: 60px 20px 20px 20px;
-    color: #FFF
+    color: #FFF;
+    text-shadow: 1px 1px #222;
 }
 #header .header-content h1 {
     -webkit-animation-delay: .5s;
@@ -322,19 +323,19 @@ body {
 }
 #header .header-content .post-data,
 #header .header-content .tag-data {
-    color: gray;
+    color: white;
     font-size: 14px;
     font-size: 1.4rem;
     cursor: default
 }
 #header .header-content .post-data a,
 #header .header-content .tag-data a {
-    color: #8d8d8d;
+    color: white;
     border: 0
 }
 #header .header-content .post-data a:hover,
 #header .header-content .tag-data a:hover {
-    color: #FFF
+    color: #BBB
 }
 #header .header-content .post-data>span,
 #header .header-content .tag-data>span {

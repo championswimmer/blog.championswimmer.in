@@ -13,10 +13,10 @@ Do the regular drill. Use unetbootin or LiLi USB Creator or the Startup Disk Cre
 I have two HDD’s in my box. If you also have two disks, create a 100GB ext4 partition on the disk on which you will NOT install the OS to house the out folder of the android build system. Having the source and the out folder on separate drives significantly lowers build times. If you have one SSD, put the out directory on SSD, if you have two SSDs well do I need to say ?
 
 While installing, Ubuntu provides you with the option to select a few pre-packaged bundles.
-OpenSSH -> enable it
-DNS Server -> enable it if your server would be accessed over internet without a router in between
+OpenSSH -> enable it   +
+DNS Server -> enable it if your server would be accessed over internet without a router in between   +
 LAMP -> install it so that you can easily download the built files over http etc
-Other packages are as per your choice (depends on what other purposes you might need the server for)
+Other packages are as per your choice (depends on what other purposes you might need the server for) +
 
 Now let the installation get over. Enter your name and hostname as per your liking. Reboot the box after installation is over.
 

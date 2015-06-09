@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Setting up an Android build server (Ubuntu 13.10)</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//blog.championswimmer.in/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//blog.championswimmer.in/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//blog.championswimmer.in/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="http://blog.championswimmer.in/2013/12/01/Setting-up-an-Android-build-server-Ubuntu-1310.html" />
+    
+    <meta property="og:site_name" content="//TODO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Setting up an Android build server (Ubuntu 13.10)" />
+    <meta property="og:description" content="Per se this is not a guide to set up a brand new Android buildbox. (And no I am definitely not going to go through continuous integration setup etc) I have an old box at home, that I use for..." />
+    <meta property="og:url" content="http://blog.championswimmer.in/2013/12/01/Setting-up-an-Android-build-server-Ubuntu-1310.html" />
+    <meta property="article:published_time" content="2013-11-30T18:30:00.000Z" />
+    <meta property="article:modified_time" content="2015-06-09T13:40:05.310Z" />
+    <meta property="article:tag" content="ubuntu" />
+    <meta property="article:tag" content="linux" />
+    <meta property="article:tag" content="android" />
+    <meta property="article:tag" content="build" />
+    <meta property="article:tag" content="server" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Setting up an Android build server (Ubuntu 13.10)" />
+    <meta name="twitter:description" content="Per se this is not a guide to set up a brand new Android buildbox. (And no I am definitely not going to go through continuous integration setup etc) I have an old box at home, that I use for..." />
+    <meta name="twitter:url" content="http://blog.championswimmer.in/2013/12/01/Setting-up-an-Android-build-server-Ubuntu-1310.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "//TODO",
+    "author": {
+        "@type": "Person",
+        "name": "Arnav Gupta",
+        "image": "https://avatars.githubusercontent.com/u/1327050?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://championswimmer.in"
+    },
+    "headline": "Setting up an Android build server (Ubuntu 13.10)",
+    "url": "http://blog.championswimmer.in/2013/12/01/Setting-up-an-Android-build-server-Ubuntu-1310.html",
+    "datePublished": "2013-11-30T18:30:00.000Z",
+    "dateModified": "2015-06-09T13:40:05.310Z",
+    "keywords": "ubuntu,  linux,  android,  build,  server",
+    "description": "Per se this is not a guide to set up a brand new Android buildbox. (And no I am definitely not going to go through continuous integration setup etc) I have an old box at home, that I use for..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="//TODO" href="http://blog.championswimmer.in/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-ubuntu tag-linux tag-android tag-build tag-server">
+    <header id="header" class="animated fadeIn">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="http://blog.championswimmer.in">//TODO</a>
+        <span class="blog-description">code the blog, blog the code</span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">Setting up an Android build server (Ubuntu 13.10)</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1385836200" datetime="2013-12-01T00:00" title="01 December 2013">2013-12-01 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://blog.championswimmer.in/tag/ubuntu">ubuntu</a>, <a href="http://blog.championswimmer.in/tag/linux"> linux</a>, <a href="http://blog.championswimmer.in/tag/android"> android</a>, <a href="http://blog.championswimmer.in/tag/build"> build</a>, <a href="http://blog.championswimmer.in/tag/server"> server</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Arnav Gupta</a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-ubuntu tag-linux tag-android tag-build tag-server">
+        <section class="post-content">
+            <div class="paragraph">
+<p>Per se this is not a guide to set up a brand new Android buildbox. (And no I am definitely not going to go through continuous integration setup etc)
+I have an old box at home, that I use for building Android ROMs. The HDD just borked up today, so I am setting it up from scratch again. Thought why not write down the steps.</p>
+</div>
+<div class="paragraph">
+<p>This time around I am setting up Ubuntu 13.10 to see what things have changed, but seriously to set up a server, I strongly suggest using the latest LTS (12.04.3 as of now). During the installation you’ll need a head. i.e. a keyboard and a monitor connected. Once installation is done, you can keep the box headless.</p>
+</div>
+<div class="paragraph">
+<p>Do the regular drill. Use unetbootin or LiLi USB Creator or the Startup Disk Creator from inside a graphical installation of Ubuntu to create a live USB. Plug that in, and start installing it.
+I have two HDD’s in my box. If you also have two disks, create a 100GB ext4 partition on the disk on which you will NOT install the OS to house the out folder of the android build system. Having the source and the out folder on separate drives significantly lowers build times. If you have one SSD, put the out directory on SSD, if you have two SSDs well do I need to say ?</p>
+</div>
+<div class="paragraph">
+<p>While installing, Ubuntu provides you with the option to select a few pre-packaged bundles.
+OpenSSH &#8594; enable it
+DNS Server &#8594; enable it if your server would be accessed over internet without a router in between
+LAMP &#8594; install it so that you can easily download the built files over http etc
+Other packages are as per your choice (depends on what other purposes you might need the server for)</p>
+</div>
+<div class="paragraph">
+<p>Now let the installation get over. Enter your name and hostname as per your liking. Reboot the box after installation is over.</p>
+</div>
+<div class="paragraph">
+<p>Beyond this step, the need of a head is over. Once after the server has booted back up, run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">ifconfig</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to find out the local ip address of your server. Mine happens to be 192.168.1.108. To connect to your box from your laptop/tablet/PC that is on the same network (your home LAN or WLAN) just enter the following command</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">ssh 192.168.1.108 -l championswimmer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>replace ‘championswimmer’ with the username which you set up on the server during installation.</p>
+</div>
+<div class="paragraph">
+<p>Once you have logged in to the machine, my personal recommendation is to FIRST install aptitude and then perform all packag manager jobs using aptitude instead of apt-get.
+Anyway moving on, let’s first get the essential packages needed to build android.</p>
+</div>
+<div class="paragraph">
+<p>Very first is java-6</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update &amp;&amp; sudo apt-get install oracle-java6-installer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now that we have java, lets install all the other packages that we will need</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo apt-get install git-core gnupg flex bison gperf build-essential \
+  zip curl zlib1g-dev libc6-dev lib32ncurses5-dev \
+  lib32z1 lib32ncurses5 lib32bz2-1.0 \
+  x11proto-core-dev libx11-dev lib32readline-gplv2-dev lib32z-dev \
+  libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown \
+  libxml2-utils xsltproc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We also need to create a couple of libGL symlinks</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
+sudo ln -s /usr/lib32/mesa/libGL.so.1 /usr/lib32/mesa/libGL.so</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Okay then, as of now, your server is ready to blow the bits away of an Android build. But, let’s do another little thing. Setting up ccache. Ccache will drastically improve build times when you make incremental builds. C sources that are same as when you compiled last time are not going to be compiled again.
+Add the following lines to your .profile or .bashrc file</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">export USE_CCACHE=1
+export CCACHE_DIR="/path/to/a/place/that/has/~60GB/free/space"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now you are almost all set to start with the Android sources. First we will need repo. Repo is the tool that downloads all android sources and helps committing changes back to Android’s code review if you want to add something to Android :)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">mkdir -p  ~/bin
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo
+chmod a+x ~/bin/repo</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And now is the perfect time to restart your server.</p>
+</div>
+<div class="paragraph">
+<p>Now let’s come back to actual setting up of sources and compilation. I am not explaining this part, just writing down the commands</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">mkdir -p ~/android/aosp
+cd ~/android/aosp
+repo init -u https://android.googlesource.com/platform/manifest -b android-4.4_r1
+repo sync -j8
+. build/envsetup.sh &amp;&amp; brunch full_mako-userdebug</code></pre>
+</div>
+</div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'championswimmer'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">//TODO</span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//blog.championswimmer.in/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+</body>
+</html>

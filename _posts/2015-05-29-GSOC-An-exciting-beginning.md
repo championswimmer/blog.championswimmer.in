@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSOC-An-exciting-beginning"
+title: "GSOC: An exciting beginning"
 description: "Beginning coding on the Google Summer of Code"
 headline: "Google Summer of Code : An-exciting-beginning"
 modified: 2015-06-10 07:51:27 +0530

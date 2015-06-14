@@ -31,14 +31,14 @@ Now let the installation get over. Enter your name and hostname as per your liki
 
 Beyond this step, the need of a head is over. Once after the server has booted back up, run
 
-```shell
-ifconfig
+```
+ifconfig  
 ```
 
 to find out the local ip address of your server. Mine happens to be 192.168.1.108. To connect to your box from your laptop/tablet/PC that is on the same network (your home LAN or WLAN) just enter the following command
 
-```shell
-ssh 192.168.1.108 -l championswimmer
+```
+ssh 192.168.1.108 -l championswimmer   
 ```
 
 replace ‘championswimmer’ with the username which you set up on the server during installation.
@@ -48,42 +48,42 @@ Anyway moving on, let’s first get the essential packages needed to build andro
 
 Very first is java-6
 
-```shell
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update && sudo apt-get install oracle-java6-installer
+```
+sudo add-apt-repository ppa:webupd8team/java   
+sudo apt-get update && sudo apt-get install oracle-java6-installer   
 ```
 
 Now that we have java, lets install all the other packages that we will need
 
-```shell
-sudo apt-get install git-core gnupg flex bison gperf build-essential \
-  zip curl zlib1g-dev libc6-dev lib32ncurses5-dev \
-  lib32z1 lib32ncurses5 lib32bz2-1.0 \
-  x11proto-core-dev libx11-dev lib32readline-gplv2-dev lib32z-dev \
-  libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown \
-  libxml2-utils xsltproc
+```
+sudo apt-get install git-core gnupg flex bison gperf build-essential \    
+  zip curl zlib1g-dev libc6-dev lib32ncurses5-dev \     
+  lib32z1 lib32ncurses5 lib32bz2-1.0 \     
+  x11proto-core-dev libx11-dev lib32readline-gplv2-dev lib32z-dev \     
+  libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown \    
+  libxml2-utils xsltproc    
 ```
 
 We also need to create a couple of libGL symlinks
 
-```shell
-sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
-sudo ln -s /usr/lib32/mesa/libGL.so.1 /usr/lib32/mesa/libGL.so
+```
+sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so    
+sudo ln -s /usr/lib32/mesa/libGL.so.1 /usr/lib32/mesa/libGL.so    
 ```
 
 Okay then, as of now, your server is ready to blow the bits away of an Android build. But, let’s do another little thing. Setting up ccache. Ccache will drastically improve build times when you make incremental builds. C sources that are same as when you compiled last time are not going to be compiled again.
 Add the following lines to your .profile or .bashrc file
 
-```shell
-export USE_CCACHE=1
-export CCACHE_DIR="/path/to/a/place/that/has/~60GB/free/space"
+```
+export USE_CCACHE=1   
+export CCACHE_DIR="/path/to/a/place/that/has/~60GB/free/space"   
 ```
 
 Now you are almost all set to start with the Android sources. First we will need repo. Repo is the tool that downloads all android sources and helps committing changes back to Android’s code review if you want to add something to Android :)
 
-```shell
-mkdir -p  ~/bin
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+```
+mkdir -p  ~/bin    
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo    
 chmod a+x ~/bin/repo
 ```
 
@@ -91,10 +91,10 @@ And now is the perfect time to restart your server.
 
 Now let’s come back to actual setting up of sources and compilation. I am not explaining this part, just writing down the commands
 
-```shell
-mkdir -p ~/android/aosp
-cd ~/android/aosp
-repo init -u https://android.googlesource.com/platform/manifest -b android-4.4_r1
-repo sync -j8
-. build/envsetup.sh && brunch full_mako-userdebug
+```    
+mkdir -p ~/android/aosp      
+cd ~/android/aosp     
+repo init -u https://android.googlesource.com/platform/manifest -b android-4.4_r1    
+repo sync -j8    
+. build/envsetup.sh && brunch full_mako-userdebug     
 ```

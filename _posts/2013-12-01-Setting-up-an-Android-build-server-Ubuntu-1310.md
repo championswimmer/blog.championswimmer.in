@@ -4,7 +4,7 @@ title: "Setting up an Android build server (Ubuntu 13.10)"
 description: "Setting up an Android build server (Ubuntu 13.10)"
 headline: "Setting up an Android build server (Ubuntu 13.10)"
 modified: 2015-06-10 07:51:27 +0530
-category: Linux, Android
+category: [Linux, Android]
 tags: [linux, android, aosp, building, ubuntu]
 imagefeature: 
 mathjax: 

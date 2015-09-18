@@ -24,6 +24,12 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
+Then run the following command
+
+```bash
+/sbin/route add default gw 192.168.7.1
+```
+
 Just FYI those are DNS nameservers maintained by Google. You might want to use OpenDNS name servers too if you so wish to.  
 Close the file and now restart networking interface by  
 `/etc/init.d/networking restart`

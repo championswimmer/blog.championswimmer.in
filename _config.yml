@@ -9,6 +9,8 @@ dropcap:		  true
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  http://blog.championswimmer.in
 
+wpm:            200
+
 # Owner/author information
 owner:
   name:           Arnav Gupta

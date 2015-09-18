@@ -29,3 +29,12 @@ Close the file and now restart networking interface by
 `/etc/init.d/networking restart`
 
 Tada, you should now be able to `ping www.google.com` from your BBB. 
+
+If you are on Windows on the Laptop, bridge your Internet connection with the BBB connection. 
+
+If you are on Linux, perform the following steps
+
+```bash
+   sudo iptables -A POSTROUTING -t nat -j MASQUERADE
+   sudo echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null
+```

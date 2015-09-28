@@ -20,7 +20,7 @@ end
   # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
   # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
   desc "Start a new post"
-  task :new, :title do |t, args|
+  task :new_post, :title do |t, args|
    args.with_defaults(:title => 'My New Post')
    title = args.title
    filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
@@ -44,9 +44,9 @@ end
   end
 
   # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
-  # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
+  # usage rake new_page['My New Post'] or rake new_post (defaults to "My New page")
   desc "Start a new page"
-  task :newpage, :title do |t, args|
+  task :new_page, :title do |t, args|
    args.with_defaults(:title => 'My New page')
    title = args.title
    filename = "#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"

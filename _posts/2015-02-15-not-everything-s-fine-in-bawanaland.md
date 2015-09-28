@@ -4,7 +4,7 @@ title: "Not everything’s fine in Bawanaland . . ."
 description: "Not everything’s fine in Bawanaland . . ."
 headline: "Not everything’s fine in Bawanaland . . ."
 modified: 2015-02-15 09:30:30 +0530
-category: [DTU, College, Society]
+category: [College, DTU, Opinion]
 tags: [DTU, DCE, Bawana, 'Delhi Technological University', 'Delhi College of Engineering', SIG, IEEE]
 imagefeature: 
 mathjax: 

@@ -4,7 +4,7 @@ title: "Facebook-Whatsapp buyout : Illusion of Choice"
 description: "Facebook-Whatsapp buyout : Illusion of Choice"
 headline: "Facebook-Whatsapp buyout : Illusion of Choice"
 modified: 2014-02-15 09:16:11 +0530
-category: [Personal, Opinion, Tech]
+category: [Opinion, Technology]
 tags: [Facebook, Whatsapp, Startup, Technology, Software, Mobile]
 imagefeature: 
 mathjax: 

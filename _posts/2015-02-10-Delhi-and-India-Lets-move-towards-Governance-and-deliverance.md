@@ -3,7 +3,7 @@ layout: post
 title: Delhi and India – Let’s move towards Governance and deliverance.
 description: "A comment on the recent election results"
 modified: 2015-02-10
-category: [Politics]
+category: [Politics, Opinion]
 tags: [delhi, india, bjp, aap, modi, kejriwal]
 imagefeature: 
 comments: true

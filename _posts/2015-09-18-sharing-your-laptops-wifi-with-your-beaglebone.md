@@ -4,7 +4,7 @@ title: "Sharing your Laptop's WiFi with your BeagleBone"
 description: "Sharing wifi over USB with Beaglebone Black"
 headline: "Sharing wifi over USB with Beaglebone Black"
 modified: 2015-09-18 16:35:28 +0530
-category: [Hardware, Networking]
+category: [Linux, Networking]
 tags: [Beaglebone, Linux, Networking, Hardware]
 imagefeature: 
 mathjax: 

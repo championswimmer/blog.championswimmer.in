@@ -4,7 +4,7 @@ title: "Open-Event: An attempt to make an OSS framework for event apps and websi
 description: "Initial plans, structure of API, and how we began"
 headline: "Open-Event: An attempt to make an OSS framework for event apps and websites"
 modified: 2015-06-24 04:10:38 +0530
-category: [Web, Open Source]
+category: [Web, 'Open Source', Programming]
 tags: [GSoC, FOSSASIA, Open-Event]
 imagefeature: 
 mathjax: 

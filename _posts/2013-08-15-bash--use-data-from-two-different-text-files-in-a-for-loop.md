@@ -4,7 +4,7 @@ title: "Bash : Use data from two different text files in a for loop"
 description: "Bash : Use data from two different text files in a for loop"
 headline: "Bash : Use data from two different text files in a for loop"
 modified: 2013-08-28 15:22:17 +0530
-category: [Bash, Linux, Programming]
+category: [Programming, Linux, Bash]
 tags: [Shell, Bash, Linux, Scripting, Loop, Programming]
 imagefeature: 
 mathjax: 

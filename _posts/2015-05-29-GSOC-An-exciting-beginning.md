@@ -4,7 +4,7 @@ title: "GSOC: An exciting beginning"
 description: "Beginning coding on the Google Summer of Code"
 headline: "Google Summer of Code : An-exciting-beginning"
 modified: 2015-06-10 07:51:27 +0530
-category: Open Source
+category: ['Open Source', Programming]
 tags: [gsoc, code, fossasia, open-event]
 imagefeature: 
 mathjax: 

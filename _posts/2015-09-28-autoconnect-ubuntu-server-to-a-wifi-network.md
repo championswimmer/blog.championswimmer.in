@@ -4,7 +4,7 @@ title: "Autoconnect Ubuntu Server to a Wifi network"
 description: "Autoconnect Ubuntu Server to a Wifi network"
 headline: "Autoconnect Ubuntu Server to a Wifi network"
 modified: 2015-09-28 07:23:18 +0530
-category: [Linux, Ubuntu, Networking]
+category: [Linux, Networking]
 tags: [Linux, Networking, Ubuntu, Server, Wifi]
 imagefeature: 
 mathjax: 

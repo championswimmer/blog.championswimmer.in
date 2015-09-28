@@ -59,7 +59,7 @@ Coming to another point about SIGs, please remember something, the guy taking th
 I have been that guy. And let me tell you something, while I like to share my knowledge, I don’t give too much of a shit about how many sessions you missed. This isn’t private tuition. Some of the people most interested in Android, attended each and every session of the Android SIGs we had last year. And frankly, to me it hardly matters if the attendance is 80 or 10. You are going to learn, only if you WANT to learn. The guy explaining it, can do little to make you WANT to learn, he can only help you UNDERSTAND. I am not saying you cannot miss SIG sessions even if there is a genuine reason. It is exactly like you weigh factors like laziness, attendance %, and importance of a class before deciding whether or not to get up from the bed every morning, apply the same logic here. It’s your decision.
 
 
-###5. THAT FUCKING FARCE OF A TECHFEST
+### 5. THAT FUCKING FARCE OF A TECHFEST
 
 Yes that is exactly what it is. Please repeat with me once again “Our college has a fucking farce in the name of a techfest”. Say it a few more times. Those who are in 1st year and haven’t attended the Techfest even once yet, you can come back and read that out in February, and I know you will agree.
 
@@ -86,6 +86,6 @@ The education system is already gone to dogs, but in niches within this system, 
 And to conclude, as a tribute to one my favourite film closing sequences from Se7en, and originally quoted from Ernst Hemingway,
 > “DTU is a fine place, and worth fighting for”, I agree with the second part. 
 
-__* <span style="color:purple">P.S. There could be accusations here, that are vague and general. Painting a broad brush, which is unfair. Things mentioned here do not apply universally for all people, groups, or all situations or circumstances. There are some specific accusations too, that might be unfounded due to certain misinformation I have had, or misinterpretation of certain facts. I apologize for that.
+_** <span style="color:purple">P.S. There could be accusations here, that are vague and general. Painting a broad brush, which is unfair. Things mentioned here do not apply universally for all people, groups, or all situations or circumstances. There are some specific accusations too, that might be unfounded due to certain misinformation I have had, or misinterpretation of certain facts. I apologize for that.
 The reality might not be as bad as I have painted, because I have focused on the negatives only, but the truth isn’t much far from what I have described as well.
-I have nothing personal against any person or any decision taken by anyone. Often people are victims of circumstances. I know this article offends more people than it pleases, but trust me, that isn’t the primary objective.</span>*__
+I have nothing personal against any person or any decision taken by anyone. Often people are victims of circumstances. I know this article offends more people than it pleases, but trust me, that isn’t the primary objective.</span>**_

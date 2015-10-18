@@ -19,7 +19,7 @@ Just add `android:summary="%s"` and Android will automatically do it for you ;)
 
 For example, your code might look like : - 
 
-```
+```xml
     <ListPreference
         android:summary="%s"
         android:defaultValue="km"

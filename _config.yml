@@ -58,6 +58,7 @@ permalink:   /:year/:month/:title
 
 # Conversion
 markdown: redcarpet
+highlighter: pygments
 
 
 prose:

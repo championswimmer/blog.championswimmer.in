@@ -57,13 +57,13 @@ paginate_path: "page:num"
 permalink:   /:year/:month/:title
 
 # Conversion
-markdown:    kramdown
-highlighter: coderay
+markdown:    redcarpet
+highlighter: pygments
 lsi:         false
 excerpt_separator: "\n\n"
-kramdown:
-  input: GFM
-  syntax_highlighter: coderay
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: pygments
 
   coderay:
     coderay_line_numbers: 

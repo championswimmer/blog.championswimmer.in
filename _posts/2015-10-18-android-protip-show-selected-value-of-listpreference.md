@@ -30,4 +30,4 @@ For example, your code might look like : -
 
 ```  
 
-Android will even put the currently selected value when you enter the preference screen. 
+Android will even put the currently selected value when you enter the preference screen.   

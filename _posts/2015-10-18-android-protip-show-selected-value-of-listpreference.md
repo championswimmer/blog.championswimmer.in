@@ -19,7 +19,7 @@ Just add `android:summary="%s"` and Android will automatically do it for you ;)
 
 For example, your code might look like : - 
 
-{% highlight xml %}
+```xml
     <ListPreference
         android:summary="%s"
         android:defaultValue="km"
@@ -28,6 +28,6 @@ For example, your code might look like : -
         android:key="distance_unit"
         android:title="Distance Unit"/>
 
-{% endhighlight %}  
+```  
 
 Android will even put the currently selected value when you enter the preference screen. 

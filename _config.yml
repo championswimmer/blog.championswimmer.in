@@ -50,7 +50,6 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Kolkata
 future:      true
-highlighter: pygments
 markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
@@ -59,12 +58,10 @@ paginate_path: "page:num"
 permalink:   /:year/:month/:title
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
   use_coderay: true
   input: GFM
+  syntax_highlighter: rogue
 
   coderay:
     coderay_line_numbers: 

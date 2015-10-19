@@ -19,17 +19,6 @@ Just add `android:summary="%s"` and Android will automatically do it for you ;)
 
 For example, your code might look like : - 
 
-{% highlight xml %}
-    <ListPreference
-        android:summary="%s"
-        android:defaultValue="km"
-        android:entries="@array/distance_unit_names"
-        android:entryValues="@array/distance_unit_values"
-        android:key="distance_unit"
-        android:title="Distance Unit"/>
-
-{% endhighlight %}  
-
 ```xml
     <ListPreference
         android:summary="%s"

@@ -57,20 +57,10 @@ paginate_path: "page:num"
 permalink:   /:year/:month/:title
 
 # Conversion
-markdown:    redcarpet
-highlighter: pygments
-lsi:         false
-excerpt_separator: "\n\n"
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: pygments
+markdown: redcarpet2
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
 
 prose:
   rooturl: '_posts'

@@ -17,7 +17,7 @@ You are using Jekyll to host a blog on Github pages. And you need to add Syntax 
 Now that's a very unique set of circumstances to be in, and if you are in those shoes, you might have figured out that it seems almost impossible to get this to work. Here are the basic blockers - 
 1.  Github doesn't allow user plugins. So you cannot just put coderay.rb inside _plugins
 2.  Github by default uses *redcarpet* as the markdown interpreter. But, *kramdown* has inbuilt syntax highlighting support, redcarpet doesn't
-3.  Since `{% highlight ruby %}` kind of code block demarcaters work, no one in the Jekyll/Redcarpet/Kramdown community wants to help fix this issue. 
+3.  Since `{% highlight ruby %} {% endhighlight %}` kind of code block demarcaters work, no one in the Jekyll/Redcarpet/Kramdown community wants to help fix this issue. 
 4.  Redcarpet can interpret GFM, while Kramdown cannot. Although the documentation says it can.
 
 But that aside, lets quickly take a look at how this can be solved. 

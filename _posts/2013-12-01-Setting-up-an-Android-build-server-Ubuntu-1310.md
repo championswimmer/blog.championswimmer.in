@@ -86,7 +86,6 @@ mkdir -p  ~/bin
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo    
 chmod a+x ~/bin/repo
 ```
-
 And now is the perfect time to restart your server.
 
 Now let’s come back to actual setting up of sources and compilation. I am not explaining this part, just writing down the commands

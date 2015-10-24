@@ -36,6 +36,7 @@ redcarpet:
 Now here is a very important step. Having a pgments css file and having it included is **very** important. Even if all the other configs are ok, but the css not included, the Jekyll site wont build on Github's server. 
 
 You can save the following as assets/css/pygments/solarized-dark.css
+
 ```css
 /* Solarized Dark 
 

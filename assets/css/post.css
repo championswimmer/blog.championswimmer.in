@@ -17,7 +17,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   height: 5rem;
   line-height: 5rem;
   vertical-align: middle;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-size: 1.625rem;
   font-weight: 700;
   color: white;
@@ -347,7 +347,7 @@ html, body, .notepad-post-container, .notepad-post-header {
     .notepad-author-info .notepad-post-author h1 {
       margin: 0;
       padding: 0;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Alegreya Sans SC", sans-serif;
       font-weight: 700;
       text-transform: uppercase; }
     .notepad-author-info .notepad-post-author > p {
@@ -399,7 +399,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   .notepad-page-title h1,
   .notepad-post-title-simple h1 {
     color: black;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 3.125rem;
     padding: 0;
     padding-top: 5rem;

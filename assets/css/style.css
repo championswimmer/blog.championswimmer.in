@@ -475,6 +475,12 @@ figure a img:hover {
     -webkit-filter: brightness(130%);
 }
 
+table {
+  display: table;
+  margin: 0 auto 2em auto;
+}
+
+
 @media only screen and (min-width:43.75em) {
     figure.half img {
         float: left;
@@ -502,6 +508,9 @@ figure a img:hover {
 }
 
 code {
+    font-size: 16px;
+    color: inherit;
+    font-weight: normal;
     font-family: Inconsolata,"Liberation Mono",Courier,monospace;
 }
 
@@ -621,7 +630,7 @@ figcaption {
 }
 /* =====================================
  * :: Select Text to Share CSS
- * 
+ *
  * @ Author: Hadrien Boyer
  * @ Website: http://hadrien-boyer.fr
  * @ v.0.1 - Last update : 2014/06/29
@@ -689,7 +698,7 @@ figcaption {
   top:0;
   left:0;
 }
-.tooltipContainer a { 
+.tooltipContainer a {
   width: 100%;
   background:transparent url(/images/sprites.png) 0px 0px no-repeat;
   padding:0;

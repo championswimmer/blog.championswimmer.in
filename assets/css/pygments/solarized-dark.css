@@ -1,4 +1,4 @@
-/* Solarized Dark 
+/* Solarized Dark
 
 For use with Jekyll and Pygments
 
@@ -16,13 +16,21 @@ cyan      #2aa198  strings, numbers
 green     #859900  operators, other keywords
 */
 
-.highlight { 
-    background-color: #002b36; 
-    color: #93a1a1; 
-    max-width: 56.25rem; 
-    padding: 1rem; 
-    border-radius: 1rem; 
-    margin: 0px auto 2em; 
+code {
+  color: #93a1a1;
+  background-color: #002b36;
+  padding: 0.15rem;
+  border-radius: 0.15rem;
+}
+
+.highlight {
+    background-color: #002b36;
+    color: #93a1a1;
+    max-width: 56.25rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0px auto 2em;
+    font-family: Inconsolata,"Liberation Mono",Courier,monospace;
 }
 .highlight .lineno { color: #586e75 } /* Line Numbers */
 .highlight .c { color: #586e75 } /* Comment */

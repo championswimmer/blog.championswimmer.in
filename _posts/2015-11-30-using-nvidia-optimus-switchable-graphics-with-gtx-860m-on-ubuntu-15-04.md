@@ -29,7 +29,8 @@ sudo apt-get remove --purge bumblebee* primus nvidia*
 ```
 Perform a reboot here, so your system safely configures itself to run on Intel/mesa.
 
-Let's add edgers' repo and install nvidia-340.
+Let's add edgers' repo and install nvidia-340.  
+
 ```bash
 sudo add-apt-repository ppa:xorg-edgers/ppa
 sudo apt-get update
@@ -37,15 +38,17 @@ sudo apt-get install nvidia-340-updates
 ```
 Again, it is safe to perform a reboot here.
 
-Let's get the prime and settings packages now.
+Let's get the prime and settings packages now.  
+
 ```bash
 sudo apt-get install nvidia-settings nvidia-prime
 ```
 
-Now before we reboot, we need to make sure of one thing, that is nvidia is loaded before bbswitch always. For that, edit `/etc/modules` and add these two lines
+Now before we reboot, we need to make sure of one thing, that is nvidia is loaded before bbswitch always. For that, edit `/etc/modules` and add these two lines  
+
 ```
 nvidia-304-updates
 bbswitch
 ```
 
-Now reboot your system. If all has gone right, you can switch between NVIDIA and Intel using the `nvidia-settings` configuration utility. **You have to logout and login every time you switch graphics cards. Also unlike optirun/primusrun, when you have enabled NVIDIA, everything works with NVIDIA and similarly for Intel**. 
+Now reboot your system. If all has gone right, you can switch between NVIDIA and Intel using the `nvidia-settings` configuration utility. **You have to logout and login every time you switch graphics cards. Also unlike optirun/primusrun, when you have enabled NVIDIA, everything works with NVIDIA and similarly for Intel**.

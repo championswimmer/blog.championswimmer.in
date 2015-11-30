@@ -18,8 +18,20 @@ I have been a fan of Bumblebee from the early stages of it's development, and on
 
 Times have changed. I have a new laptop now - A Lenovo Y50-70 that has the GTX 860M. And now another project has gained momentum called 'NVIDIA Prime'.
 
-After wrestling with Bumblebee and Primus for over a week, I finally gave up because there was no stable solution in sight, and the closest I had come to was to manually unload and load the nvidia and bbswitch modules every time I wanted to use the NVIDIA GPU. Without the ease of having `optirun glxgears` available on my shell, without having to do multiple modprobe-fu, I considered there was little benefit of using Bumblebee.
+<strike>After wrestling with Bumblebee and Primus for over a week, I finally gave up because there was no stable solution in sight, and the closest I had come to was to manually unload and load the nvidia and bbswitch modules every time I wanted to use the NVIDIA GPU. Without the ease of having `optirun glxgears` available on my shell, without having to do multiple modprobe-fu, I considered there was little benefit of using Bumblebee.</strike> So I have been able to get this work with Bumblebee too, and I will mention how to use both Prime and Bumblebee.
 
+* Jump to
+  * [Using NVIDIA Prime](#prime)
+  * [Using Bumblebee](#bumblebee)
+
+At the outset let's discuss a few basic differences.
+
+NVIDIA Prime  | Bumblebee
+--|--
+A newer solution  |  An older project running for years
+A  |  A
+
+### <a name="prime">Using NVIDIA Prime (nvidia-prime)</a>
 So I set off on the other path to use NVIDIA Prime instead. Using **nvidia-340-updates** driver from the xord-edgers ppa, as of 30th Nov, 2015, this works perfectly. So let's go through the steps to make it work.
 
 First let's do away with bumblebee if you've installed it

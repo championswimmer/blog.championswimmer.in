@@ -30,7 +30,8 @@ And here I was supposed to work on my GSoC project which involved
 ## Package Manager
 For a Linux refugee, the first pain point is the obvious absence of a package manager. (I hear Windows 10 **FINALLY** has one). 
 It is really such a PITA if you cannot simply get ruby or node or python via `apt-get install nodejs python ruby` 
-And as it happens, there are three options in front of you - 
+And as it happens, there are three options in front of you -  
+
  1. **[NuGet](https://www.nuget.org/)** - The package manager that is now default in Visual Studio as well.
  2. **[Scoop](scoop.sh/)** - My personal favourite and the closest you get to a Linux package manager, and has a repository of almost all known development related packages.
  3. **[Chocolatey](https://chocolatey.org/)** - One of the earliest attempts to get a apt-get like interface on windows.

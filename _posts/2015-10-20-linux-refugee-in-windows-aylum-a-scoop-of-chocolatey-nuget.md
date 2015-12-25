@@ -46,6 +46,7 @@ Github for Windows is great way to bring not just Git to Windows, but via the _*
 While what Git Shell provides is really nice, if you are weeping silently because you really really want a proper Linux CLI inside Windows (oh dear you, I can feel you man), then there are few tweaks that you can do. 
 
 You can get powershell, and install the Solarized theme, that makes stuff really awesome
+
 ```
 > scoop install concfg
 > concfg import solarized small

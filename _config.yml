@@ -1,12 +1,12 @@
 title:            //TODO
-description:      "code the blog, blog the code"
+description:      code the blog, blog the code
 logo:             logo.png
 disqus_shortname: championswimmer
 share:            true
 dropcap:		  true
 
 # Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  http://blog.championswimmer.in
 
@@ -22,16 +22,16 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        championswimmer
   facebook:       championswimmer
-  github:         championswimmer      
+  github:         championswimmer
   instagram:      arnavgupta31
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/+ArnavGupta
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-20326073-1
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -60,8 +60,8 @@ permalink:   /:year/:month/:title
 markdown: redcarpet
 highlighter: pygments
 redcarpet:
-  extensions: ["fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+highlight_theme: light
 
 prose:
   rooturl: '_posts'

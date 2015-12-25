@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/foundation.min.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments/solarized-dark.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments/solarized-{{ site.highlight_theme }}.css">
 
 
 {% if page.mathjax %}
@@ -66,7 +66,7 @@
                    autoNumber: "AMS",
                 },
                 unicode: {
-                   fonts: "STIXGeneral,'Arial Unicode MS'" 
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
                 }
             },
             showProcessingMessages: false

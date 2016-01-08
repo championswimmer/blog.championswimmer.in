@@ -28,18 +28,20 @@ dd if=/path/to/downloaded/img of=/dev/sdb
 You should boot from your USB drive (you'll need to enable legacy support if yours is a post-UEFI era BIOS), and play with the OS to make sure everything works, and if you like it, and want to permanently install it to your laptop, read on.
 
 So, if you want Chromium OS to be the only operating system in your laptop, you can just press `Ctrl` + `Alt` `F2`, login with user:`chronos` password:`password` and run the command `sudo install`
-*This **will** format your hard drive*
+_This **will** format your hard drive_
 
 But instead if you want to install Chromium OS as an additional OS to your laptop then there is way for that too. Here are some necessary conditions though -
- 1. You'll need to make 2 partitions, one 2GB and another at least 4GB in size. Your HDD should have that space, or you should create that by shrinking any existing partitions.
- 2. You need to be using GRUB as your bootloader. If you are running Linux with Windows/Mac I am assuming you already are running GRUB. If not, then you can still install GRUB - a step that you [can figure out yourself](http://google.com/search?q=install+grub+bootloader)
+
+1. You'll need to make 2 partitions, one 2GB and another at least 4GB in size. Your HDD should have that space, or you should create that by shrinking any existing partitions.
+2. You need to be using GRUB as your bootloader. If you are running Linux with Windows/Mac I am assuming you already are running GRUB. If not, then you can still install GRUB - a step that you [can figure out yourself](http://google.com/search?q=install+grub+bootloader)
 
 First take a look at the bootable USB you made out of the Chromium OS disk. It will have two important partitions called - **ROOT_A** and **STATE**.
 We need to create corresponding partitions on your hard disk (these can be larger size than the ones on the USB, a larger **STATE** partition gives you more local storage space. A larger **ROOT-A** partition is mostly of no use, as this partition's content won't change in the future).
 
 Let's consider we made the following partitions -    
- * /dev/sda7  - ext2 - 2.15GB
- * /dev/sda8 - ext4 - 6GB
+
+* /dev/sda7  - ext2 - 2.15GB
+* /dev/sda8 - ext4 - 6GB
 
 Now you should copy the corresponding partitions from your USB drive to your own hard disk using `dd`    
 

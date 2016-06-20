@@ -5,6 +5,11 @@ mathjax: false
 featured: false
 comments: false
 title: Handling File uploads in HTML5 and Express (with Multer)
+tags: 'express, node, multer, web development, html5, forms'
+categories:
+  - webdevelopment
+  - Node.js
+  - GSOC
 ---
 The [Open Event Webapp Generator](http://open-event-generator.herokuapp.com/) has a pure HTML front end form, and Express based backend.
 

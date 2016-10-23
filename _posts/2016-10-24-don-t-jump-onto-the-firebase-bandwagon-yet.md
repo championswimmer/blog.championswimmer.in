@@ -15,7 +15,7 @@ imagefeature: ''
 
 **Firebase** is the rage. It's the talk of the town, and every frontend conference, be it _Web_ or _Mobile_ can't stop talking about [Firebase](http://firebase.google.com).
 
-But hold your horses a bit our there. Now I am not saying that do not use Firebase. I use Firebase extensively. At [CodingBlocks](http://codingblocks.com) I make it a point to teach using Firebase to the students of the _Android_ programme. But all said and done, Firebase has a **specific** use case. And we cannot overlook that.
+But hold your horses a bit out there. Now I am not saying that do not use Firebase. I use Firebase extensively. At [CodingBlocks](http://codingblocks.com) I make it a point to teach using Firebase to the students of the _Android_ programme. But all said and done, Firebase has a **specific** use case. And we cannot overlook that.
 
 Firebase came about to be used as a _**realtime, object storage**_ system. Both the terms _realtime_ and _object_ storage are important. For one, being realtime is not something we always need. For a chat app yes, for a CRM, probably not needed at all. Secondly the data format of Firebase is very dubious.
 It is an object store meaning, it resembles no-SQL databases like `MongoDB` and `DocumentStore` more than it does RDBMS like `MySQL` or `Oracle`. NoSQL is also something the cool kids have been harping on since 2010, but is again, useful for specific cases.
@@ -71,7 +71,7 @@ Thing is, pricing is very awkward. Upto 100 DB connections (simultaneous), you a
 Beyond this, you do not have a $5 or $10 tier. You need to jump straight to the $25 plan.
 
 Now take a step back and try to understand. 100 connections is **entirely** different from non-realtime datastores that provide usually _20 req/sec_ or _30 req/sec_ (what AWS, Parse, Azure mBaas limits are) on their free tier.
-Firebase considers an user to be a _**connection**_ whenever he has his app open and connected to internet. (Side note: on mobile platforms like Android, you can do Firebase.goOnline() and Firebase.goOffline(), recently).
+Firebase considers a user to be a _**connection**_ whenever he has his app open and connected to internet. (Side note: on mobile platforms like Android, you can do Firebase.goOnline() and Firebase.goOffline(), recently).
 
 And trust me, if you're a chatting app, or a content reading app, getting to 100 simultaneous open connections is a **very easy to achieve target**.
 

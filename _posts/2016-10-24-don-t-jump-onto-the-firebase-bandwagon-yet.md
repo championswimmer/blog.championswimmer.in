@@ -20,6 +20,7 @@ Firebase came about to be used as a _**realtime, object storage**_ system. Both 
 It is an object store meaning, it resembles no-SQL databases like `MongoDB` and `DocumentStore` more than it does RDBMS like `MySQL` or `Oracle`. NoSQL is also something the cool kids have been harping on since 2010, but is again, useful for specific cases. 
 
 Now where my criticism of Firebase stems from are two easily overlooked points -   
-1. The "object storage" uses a Database that is not transparent. We do not actually know if it used MongoDB on the backend or some other kind of database. And being proprietary, we do not actually know the availability/consistency tradeoffs, have any perf benchmarks etc of the underlying datastore that powers Firebase.
 
-2. 
+1. The "object storage" uses a Database that is not transparent. We do not actually know if it used MongoDB on the backend or some other kind of database. And being proprietary, we do not actually know the availability/consistency tradeoffs, have any perf benchmarks etc of the underlying datastore that powers Firebase.
+2. The issue with realtime is, it's too good to be true. And it is. Since more than 7 or 8 cases out of 10, you do not **actually** need something _really_ realtime (as in making a WebSocket connection and doing live 2-way updates), just getting realtime for the lulz is not a good idea. It will be resource intensive, expend more internet bandwidth on your client and devices, and _most important of all_ is a pricey business. 
+

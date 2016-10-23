@@ -33,28 +33,28 @@ What the Firebase data model looks like is somewhat this (taking a blog) -
 
 ```
 root
-	- posts
-    	- K1mn3b4m1n3
-        	- title: ""
-            - content: ""
-            - author
-    	- K2m3n4h2mn3
-        	- title: ""
-            - content: ""
-            - author
-    	- K3mn45b3mm3
-        	- title: ""
-            - content: ""
-            - author
-	- comments
-    	- K2m34nb2m
-        	- post : K1mn3b4m1n3
-            - title: ""
-            - content
-        - K62mn22m
-        	- post : K2m3n4h2mn3
-            - title: ""
-            - author: ""
+	- posts  
+	    	- K1mn3b4m1n3
+	        	- title: ""
+	            - content: ""
+	            - author
+	    	- K2m3n4h2mn3
+	        	- title: ""
+	            - content: ""
+	            - author
+	    	- K3mn45b3mm3
+	        	- title: ""
+	            - content: ""
+	            - author
+	- comments  
+	    	- K2m34nb2m
+	        	- post : K1mn3b4m1n3
+	            - title: ""
+	            - content
+	        - K62mn22m
+	        	- post : K2m3n4h2mn3
+	            - title: ""
+	            - author: ""
 ```
 
 There is a single node called **root** which is the entire DB of your app. Inside that there are _**refs**_ like `posts` and `comments` which are mostly analogous to _Collection_ of MongoDB.

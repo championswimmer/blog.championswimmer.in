@@ -3,7 +3,7 @@ layout: post
 published: true
 mathjax: false
 featured: false
-comments: false
+comments: true
 title: "Don't jump onto the Firebase bandwagon yet"
 description: 'Some caveats around using Firebase'
 headline: ''

@@ -7,15 +7,12 @@ modified: 2017-06-29 16:13:09 +0530
 category: [Personal, Experiences]
 tags: ['indian parents', parenting, indian, whining, comedy]
 imagefeature: 'posts/indian-parents/feature.jpg'
-mathjax: 
-chart: 
+mathjax:
+chart:
 comments: true
 featured: false
 ---
-
-# Indian Parents : Before and after graduating
-
-![](https://cdn-images-1.medium.com/max/1600/1*T6To-p6bQDfaccLLwYzoPA.jpeg)
+![](/images/posts/indian-parents/feature.jpg)
 <span class="figcaption_hack">Indian Parents have no chill</span>
 
 “Indian parents” is the ideal topic to joke on, for Indians. It’s dead straight.

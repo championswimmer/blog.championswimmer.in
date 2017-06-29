@@ -6,7 +6,7 @@ headline:
 modified: 2017-06-29 16:38:46 +0530
 category: [Personal, Experiences]
 tags: ['tech conference', conference, experience, sarcasm, comedy]
-imagefeature: 
+imagefeature: posts/tech-conferences/fig1.jpg
 mathjax: 
 chart: 
 comments: true
@@ -136,7 +136,7 @@ leader [James Mickens](https://mickens.seas.harvard.edu/wisdom-james-mickens).
 (The liberal use of **we, **if had not clearly pointed out, then yes, this is
 the category I belong to).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TVaud_9bJCA?list=PLgc7EY7uwmbUyKQwLWYDIiVSPvj_nQm6A" frameborder="0" allowfullscreen></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/TVaud_9bJCA?list=PLgc7EY7uwmbUyKQwLWYDIiVSPvj_nQm6A" frameborder="0" allowfullscreen></iframe>
 <span class="figcaption_hack">Here you go, meme-ified, on your face facts, about how your Digital money isn’t
 all that safe</span>
 

@@ -6,7 +6,7 @@ headline:
 modified: 2017-06-29 16:13:09 +0530
 category: [Personal, Experiences]
 tags: ['indian parents', parenting, indian, whining, comedy]
-imagefeature: 
+imagefeature: 'posts/indian-parents/feature.jpg'
 mathjax: 
 chart: 
 comments: true
@@ -137,12 +137,3 @@ follow your passion. Don’t be cliched Indian people who figure out what to do 
 life after engineering. **Ye bik gyi hai engineering. Kuch ni rakha hai isme. Ye
 sab engineering colleges aur parents milke humko pagal bana rahe hai. :)**
 
-* [Education](https://medium.com/tag/education?source=post)
-* [Parents](https://medium.com/tag/parents?source=post)
-* [Comedy](https://medium.com/tag/comedy?source=post)
-* [Life Lessons](https://medium.com/tag/life-lessons?source=post)
-* [Indian](https://medium.com/tag/indian?source=post)
-
-### [Arnav Gupta](https://medium.com/@championswimmer)
-
-Swimmer, Coder, Poet, Engineer, Entrepreneur

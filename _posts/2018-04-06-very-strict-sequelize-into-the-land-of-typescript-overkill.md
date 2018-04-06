@@ -222,6 +222,6 @@ A little bit of investment into boilerplate; whether you type manually everytime
 ----------
 
 _**Obligatory shameless self-plug :**_  
-I am one of the co-founders of [Coding Blocks](https://cb.lk) - A Software Programming bootcamp, based out of New Delhi, India. Among other things, we teach Full Stack Web Development using NodeJS, via both classroom programmes, as well as online classes. You can follow our Medium to find more articles on Android and Web development. 
+I am one of the co-founders of [Coding Blocks](https://codingblocks.com) - A Software Programming bootcamp, based out of New Delhi, India. Among other things, we teach Full Stack Web Development using NodeJS, via both classroom programmes, as well as online classes. You can follow our Medium to find more articles on Android and Web development. 
 
 

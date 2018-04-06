@@ -21,25 +21,25 @@ This will generate the following directory structure
 
 ```
 .
-├── addon					# your addon code goes here
-├── app						# things you want to inject into consumer apps' namespace 
+├── addon						# your addon code goes here
+├── app							# things you want to inject into consumer apps' namespace 
 ├── config					
 │   ├── ember-try.js			# testing config
 │   └── environment.js
-├── ember-cli-build.js		# how the dummy test app is built
+├── ember-cli-build.js			# how the dummy test app is built
 ├── index.js					# how your app is built (read more - https://ember-cli.com/api/classes/Addon.html ) 
 ├── package-lock.json
 ├── package.json
 ├── testem.js
 ├── tests
-│   ├── dummy				# dummy app (for testing) 
+│   ├── dummy					# dummy app (for testing) 
 │   │   ├── app
 │   │   ├── config
 │   │   └── public
 │   ├── helpers
 │   ├── index.html
-│   ├── integration			# e2e tests for your addon
-│   ├── test-helper.js		# test setup config for your addon
+│   ├── integration				# e2e tests for your addon
+│   ├── test-helper.js			# test setup config for your addon
 │   └── unit					# unit tests for your addon
 └── vendor
 ```

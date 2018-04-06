@@ -13,13 +13,13 @@ description: Creating Ember.js Addon with Typescript
 ## Getting Started
 Use ember-cli to create basic structure (like you start with creating an app) 
 
-```shell
+```shell 
 ember addon <addon-name>
 ```
 
-This will generate the following directory structure
+This will generate the following directory structure  
 
-```tree
+```
 .
 ├── addon					# your addon code goes here
 ├── app						# things you want to inject into consumer apps' namespace 
@@ -43,6 +43,7 @@ This will generate the following directory structure
 │   └── unit					# unit tests for your addon
 └── vendor
 ```
+
 
 ## Adding an util
 

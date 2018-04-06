@@ -217,8 +217,10 @@ And finally I get the same luxury on `where` queries too
 A little bit of investment into boilerplate; whether you type manually everytime - which IMHO is a bit cumbersome or you take advantage of your IDE/Editor and create templates; is required when using Typescript, but the advantages we get in terms of code completion and more importantly, compile-time error checking, even before we go into run-time mode, is well worth the time invested. 
 
 
-> Could not have written without [StackEdit](https://stackedit.io/).
+> Could not have written without [StackEdit](https://stackedit.io/). 
+
 ----------
+
 _**Obligatory shameless self-plug :**_  
 I am one of the co-founders of [Coding Blocks](https://cb.lk) - A Software Programming bootcamp, based out of New Delhi, India. Among other things, we teach Full Stack Web Development using NodeJS, via both classroom programmes, as well as online classes. You can follow our Medium to find more articles on Android and Web development. 
 
